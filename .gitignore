@@ -1,0 +1,22 @@
+# Editor
+/.vscode/
+
+# Configuração
+/config.ini
+
+# Dados
+/animals.txt
+/divulgation.ini
+/musics.txt
+/*.tmp
+/*.bak
+/*.dat
+/*.dir
+
+# Compilação do codigo fonte
+__pycache__/
+*.py[cod]
+
+# Artefatos
+*.egg-info
+/dist/
