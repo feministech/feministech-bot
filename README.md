@@ -1,3 +1,1 @@
-# BotTwitch
-
-~~refactoring in progress ~~
+# Feministech bot

@@ -116,3 +116,9 @@ class Bot(commands.Bot):
             'equipe de mulheres maravilhosas que trabalham ou estudam '
             'tecnologia! | https://anchor.fm/feministech'
         )
+
+    @commands.command(name='github')
+    async def cmd_github(self, ctx):
+        await ctx.send(
+            'https://github.com/feministech'
+        )
