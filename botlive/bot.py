@@ -131,7 +131,6 @@ class Bot(commands.Bot):
     #         f'{ctx.author.name}  '
     #     )
 
-
     @commands.command(name='rainbow')
     async def cmd_rbw(self, ctx):
         await ctx.send('💖💖💖💖💖')
