@@ -18,10 +18,6 @@ STREAMERS = [
     'morgannadev',
     'levxyca',
     'leonadev',
-    'midorifukami',
     'moniquelive',
     'punkdodevops',
-    'julialabs',
-    'lysonjeada',
     'ehmuitodrama']
-# STREAMERS = ['pachicodes']
