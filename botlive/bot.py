@@ -46,7 +46,7 @@ class Bot(commands.Bot):
     async def handle_hello(self, message):
         name = message.author.name
         if message.content and name not in BOTS and self.hello.add(name):
-            await message.channel.send(self.divulgation.get_message(name, f'Olá {name}! Boas vindas <3'))
+            await message.channel.send(self.divulgation.get_message(name, f'{name} Boas vindas <3'))
 
     # Actions
 
@@ -54,51 +54,53 @@ class Bot(commands.Bot):
 
     @commands.command(name='comandos')
     async def cmd_comandos(self, ctx):
-        comandos = str(list(self.commands.keys()))[1:-1]
+        comandos = list(self.commands.keys())
         await ctx.send(
-            f'Comandos: {comandos}'
+            f'Comandos: {" | ".join(comandos)}'
         )
 
     @commands.command(name='conduta')
     async def cmd_conduta(self, ctx):
-        await ctx.send(f'{ctx.author.name} - O mais importante por aqui é o respeito. '
-        'Conheça o Código de Conduta da nossa comunidade: https://github.com/feministech/codigo-de-conduta :)')
+        await ctx.send(
+            f'{ctx.author.name} - O mais importante por aqui é o respeito. '
+            'Conheça o Código de Conduta da nossa comunidade:'
+            ' https://github.com/feministech/codigo-de-conduta :)'
+            )
 
     @commands.command(name='feministech')
     async def cmd_feministech(self, ctx):
-        await ctx.send(f'{ctx.author.name} - Feministech é um  grupo de pessoas que se identificam no feminino e não binárias que compartilham o interesse por lives na Twitch. <3 | Siga e apoie: https://twitter.com/feminis_tech')
+        await ctx.send(
+                f'{ctx.author.name} - Feministech é um  grupo de pessoas '
+                'que se identificam no feminino e não binárias que compartilham '
+                'o interesse por lives na Twitch. <3 | Siga e apoie: https://twitter.com/feminis_tech'
+            )
 
     @commands.command(name='streamers')
     async def cmd_streamers(self, ctx):
-        await ctx.send(f'{ctx.author.name} - Conheça as streamers incríveis da nossa comunidade, assista e apoie: https://www.twitch.tv/team/livecodergirls <3')
-
-    @commands.command(name='mandavaga')
-    async def cmd_mandavaga(self, ctx):
-        await ctx.send(f'{ctx.author.name} -Viu uma vaga '
-        'legal da área de tecnologia? Mande seu PR aqui'
-        ' e compartilhe com outras pessoas: '
-        'https://github.com/feministech/mandavaga <3')
-
-    @commands.command(name='linkedin')
-    async def cmd_linkedin(self, ctx):
-        await ctx.send(f'{ctx.author.name} - Compartilhe '
-        'seu LinkedIn e adicione outras pessoas da '
-        'comunidade. Lembre-se de respeitar as pessoas.'
-        ' Adicione aqui: https://docs.google.com/spreadsheets/d/1o0XolWlW44VJ2eDL6xhc-Gb5iYvQvyoG8N4DSpeBcaE/edit?usp=sharing <3')
+        await ctx.send(
+            f'{ctx.author.name} - Conheça as streamers incríveis '
+            'da nossa comunidade, assista e apoie: https://www.twitch.tv/team/livecodergirls <3'
+        )
 
     @commands.command(name='sociais')
     async def cmd_sociais(self, ctx):
-        await ctx.send(f'{ctx.author.name} - Time da twitch: '
-        'https://www.twitch.tv/team/livecodergirls  |  Twitter:'
-        ' https://twitter.com/feminis_tech  |  Instagram: '
-        'https://www.instagram.com/feminis_cat/')
+        await ctx.send(
+            f'{ctx.author.name} - Time da twitch: '
+            'https://www.twitch.tv/team/livecodergirls  |  Twitter: '
+            'https://twitter.com/feminis_tech  |  Instagram: '
+            'https://www.instagram.com/feminis_cat/ | Linkedin: '
+            'https://www.linkedin.com/company/feministech/'
+        )
 
     @commands.command(name='redes')
     async def cmd_redes(self, ctx):
-        await ctx.send(f'{ctx.author.name} - Time da twitch: '
-        'https://www.twitch.tv/team/livecodergirls  |  Twitter: '
-        'https://twitter.com/feminis_tech  |  Instagram: '
-        'https://www.instagram.com/feminis_cat/')
+        await ctx.send(
+            f'{ctx.author.name} - Time da twitch: '
+            'https://www.twitch.tv/team/livecodergirls  |  Twitter: '
+            'https://twitter.com/feminis_tech  |  Instagram: '
+            'https://www.instagram.com/feminis_cat/ | Linkedin: '
+            'https://www.linkedin.com/company/feministech/'
+        )
 
     @commands.command(name='caverna')
     async def cmd_caverna(self, ctx):
@@ -122,3 +124,24 @@ class Bot(commands.Bot):
         await ctx.send(
             'https://github.com/feministech'
         )
+
+    # @commands.command(name='evento')
+    # async def cmd_evento(self, ctx):
+    #     await ctx.send(
+    #         f'{ctx.author.name}  '
+    #     )
+
+    @commands.command(name='rainbow')
+    async def cmd_rbw(self, ctx):
+        await ctx.send('💖💖💖💖💖')
+        await ctx.send('💖💖💖💖💖')
+        await ctx.send('🧡🧡🧡🧡🧡')
+        await ctx.send('🧡🧡🧡🧡🧡')
+        await ctx.send('💛💛💛💛💛')
+        await ctx.send('💛💛💛💛💛')
+        await ctx.send('💚💚💚💚💚')
+        await ctx.send('💚💚💚💚💚')
+        await ctx.send('💙💙💙💙💙')
+        await ctx.send('💙💙💙💙💙')
+        await ctx.send('💜💜💜💜💜')
+        await ctx.send('💜💜💜💜💜')

@@ -8,4 +8,16 @@ USERNAME = config.get('config', 'username')
 BOTS = config.get('config', 'bots').split()
 BOTS.append(USERNAME)
 PROJECT = config.get('config', 'project')
-STREAMERS = ['bug_elseif']
+STREAMERS = [
+    'bug_elseif',
+    'pachicodes',
+    'xtecna',
+    'snittey',
+    'mmillecm',
+    'leitoraincomum',
+    'morgannadev',
+    'levxyca',
+    'leonadev',
+    'moniquelive',
+    'punkdodevops',
+    'ehmuitodrama']
