@@ -62,67 +62,68 @@ class Bot(commands.Bot):
     @commands.command(name='conduta')
     async def cmd_conduta(self, ctx):
         await ctx.send(
-            f'{ctx.author.name} - O mais importante por aqui é o respeito. '
-            'Conheça o Código de Conduta da nossa comunidade:'
-            ' https://github.com/feministech/codigo-de-conduta :)'
+            f'''{ctx.author.name} - O mais importante por aqui é o respeito.
+            Conheça o Código de Conduta da nossa comunidade:
+             https://github.com/feministech/codigo-de-conduta :)'''
             )
 
     @commands.command(name='feministech')
     async def cmd_feministech(self, ctx):
         await ctx.send(
-                f'{ctx.author.name} - Feministech é um  grupo de pessoas '
-                'que se identificam no feminino e não binárias que compartilham '
-                'o interesse por lives na Twitch. <3 | Siga e apoie: https://twitter.com/feminis_tech'
+                f'''{ctx.author.name} - Feministech é um  grupo de pessoas
+                que se identificam no feminino e não binárias que compartilham
+                o interesse por lives na Twitch. <3 | Siga e apoie: https://twitter.com/feminis_tech'''
             )
 
     @commands.command(name='streamers')
     async def cmd_streamers(self, ctx):
         await ctx.send(
-            f'{ctx.author.name} - Conheça as streamers incríveis '
-            'da nossa comunidade, assista e apoie: https://www.twitch.tv/team/livecodergirls <3'
+            f'''{ctx.author.name} - Conheça as streamers incríveis
+            da nossa comunidade, assista e apoie: https://www.twitch.tv/team/livecodergirls <3'''
         )
 
     @commands.command(name='sociais')
     async def cmd_sociais(self, ctx):
         await ctx.send(
-            f'{ctx.author.name} - Time da twitch: '
-            'https://www.twitch.tv/team/livecodergirls  |  Twitter: '
-            'https://twitter.com/feminis_tech  |  Instagram: '
-            'https://www.instagram.com/feminis_cat/ | Linkedin: '
-            'https://www.linkedin.com/company/feministech/'
+            f'''{ctx.author.name} - Time da twitch: '
+            https://www.twitch.tv/team/livecodergirls  |  Twitter:
+            https://twitter.com/feminis_tech  |  Instagram:
+            https://www.instagram.com/feminis_cat/ | Linkedin:
+            https://www.linkedin.com/company/feministech/'''
         )
 
     @commands.command(name='redes')
     async def cmd_redes(self, ctx):
         await ctx.send(
-            f'{ctx.author.name} - Time da twitch: '
-            'https://www.twitch.tv/team/livecodergirls  |  Twitter: '
-            'https://twitter.com/feminis_tech  |  Instagram: '
-            'https://www.instagram.com/feminis_cat/ | Linkedin: '
-            'https://www.linkedin.com/company/feministech/'
+            f'''{ctx.author.name} - Time da twitch:
+            https://www.twitch.tv/team/livecodergirls  |  Twitter:
+            https://twitter.com/feminis_tech  |  Instagram:
+            https://www.instagram.com/feminis_cat/ | Linkedin:
+            https://www.linkedin.com/company/feministech/'''
         )
 
     @commands.command(name='caverna')
     async def cmd_caverna(self, ctx):
         await ctx.send(
-            'Uma comunidade voltada para programação em geral com o objetivo de ajudar uns aos outros, '
-            'estudar coletivamente, e outros. http://caverna.live/discord PowerUpL '
-            'Por favor, não se esqueça de passar no canal #🆁🅴🅶🆁🅰🆂'
-            'para liberar o acesso á todas as salas do nosso servidor PowerUpR'
+            '''Uma comunidade voltada para programação em geral com o objetivo de
+            ajudar uns aos outros,
+            estudar coletivamente, e outros. http://caverna.live/discord PowerUpL
+            Por favor, não se esqueça de passar no canal #🆁🅴🅶🆁🅰🆂
+            para liberar o acesso á todas as salas do nosso servidor PowerUpR'''
         )
 
     @commands.command(name='podcast')
     async def cmd_podcast(self, ctx):
         await ctx.send(
-            'Conheça o Feministech Podcast, um podcast feito por uma '
-            'equipe de mulheres maravilhosas que trabalham ou estudam '
-            'tecnologia! | https://anchor.fm/feministech'
+            '''Conheça o Feministech Podcast, um podcast feito por uma
+            equipe de mulheres maravilhosas que trabalham ou estudam
+            tecnologia! | https://anchor.fm/feministech'''
         )
 
     @commands.command(name='github')
     async def cmd_github(self, ctx):
         await ctx.send(
-            'https://github.com/feministech'
+            '''https://github.com/feministech'''
         )
 
     # @commands.command(name='evento')

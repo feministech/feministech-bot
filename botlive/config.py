@@ -20,4 +20,5 @@ STREAMERS = [
     'leonadev',
     'moniquelive',
     'punkdodevops',
-    'ehmuitodrama']
+    'ehmuitodrama',
+    'lissadev']
