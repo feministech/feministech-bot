@@ -74,32 +74,20 @@ class Bot(commands.Bot):
                 que se identificam no feminino e não binárias que compartilham
                 o interesse por lives na Twitch. <3 | Siga e apoie: https://twitter.com/feminis_tech'''
             )
+        await ctx.send(
+                f'''{ctx.author.name} - Time da twitch: '
+                https://www.twitch.tv/team/livecodergirls  |  Twitter:
+                https://twitter.com/feminis_tech  |  Instagram:
+                https://www.instagram.com/feminis_cat/ | Linkedin:
+                https://www.linkedin.com/company/feministech/ | Github
+                https://github.com/feministech '''
+        )
 
     @commands.command(name='streamers')
     async def cmd_streamers(self, ctx):
         await ctx.send(
             f'''{ctx.author.name} - Conheça as streamers incríveis
             da nossa comunidade, assista e apoie: https://www.twitch.tv/team/livecodergirls <3'''
-        )
-
-    @commands.command(name='sociais')
-    async def cmd_sociais(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} - Time da twitch: '
-            https://www.twitch.tv/team/livecodergirls  |  Twitter:
-            https://twitter.com/feminis_tech  |  Instagram:
-            https://www.instagram.com/feminis_cat/ | Linkedin:
-            https://www.linkedin.com/company/feministech/'''
-        )
-
-    @commands.command(name='redes')
-    async def cmd_redes(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} - Time da twitch:
-            https://www.twitch.tv/team/livecodergirls  |  Twitter:
-            https://twitter.com/feminis_tech  |  Instagram:
-            https://www.instagram.com/feminis_cat/ | Linkedin:
-            https://www.linkedin.com/company/feministech/'''
         )
 
     @commands.command(name='caverna')
@@ -118,12 +106,6 @@ class Bot(commands.Bot):
             '''Conheça o Feministech Podcast, um podcast feito por uma
             equipe de mulheres maravilhosas que trabalham ou estudam
             tecnologia! | https://anchor.fm/feministech'''
-        )
-
-    @commands.command(name='github')
-    async def cmd_github(self, ctx):
-        await ctx.send(
-            '''https://github.com/feministech'''
         )
 
     @commands.command(name='evento')
@@ -219,6 +201,24 @@ class Bot(commands.Bot):
             '''
         )
 
+    @commands.command(name='leticia')
+    async def cmd_leticia(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} Letícia Silva (ela/dela) é Gerente
+            de Engenharia na Z1, é também responsável pela área de
+            Developer Experience na empresa. Veio da área de Ciência
+            de Dados e possui formação em Ciência da Computação. É
+            podcaster no Botech-in, ensina sobre Dados na PretaLab,
+            cria conteúdo para a comunidade e é palestrinha e mentora nas
+            horas vagas.
+            '''
+        )
+        await ctx.send(
+            '''É também participante da nossa roda de conversa
+            sobre Carreiras em Tecnologia. Conheça e acompanhe seu trabalho:
+            https://www.instagram.com/dii_lua/ e  https://twitter.com/dii_lua'''
+        )
+
     @commands.command(name='isabelle')
     async def cmd_isabelle(self, ctx):
         await ctx.send(
@@ -268,6 +268,15 @@ class Bot(commands.Bot):
             de conversa sobre Carreiras em Tecnologia. Conheça
             e acompanhe seu trabalho: https://beacons.page/kamila_code'''
         )
+
+    # @commands.command(name='sorteio')
+    # async def cmd_sorteio(self, ctx):
+    #     await ctx.send(
+    #         f'''{ctx.author.name} Para participar do sorteio,
+    #         preencha o seguinte formulário:
+    #         https://forms.gle/yhhmooBWikus428v6 e continue
+    #         online conosco para ser considerade.'''
+    #     )
 
     @commands.command(name='rainbow')
     async def cmd_rbw(self, ctx):
