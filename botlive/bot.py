@@ -146,7 +146,8 @@ class Bot(commands.Bot):
         await ctx.send(
             ''' 14h10 - 14h40: !monique com o tema "Papo
             sobre vida de pessoa desenvolvedora e empreendedora" ||
-            14h45 - 15h15: !cami com o tema -em breve- ||
+            14h45 - 15h15: !cami com o tema  "Dicas de carreira para ingresso,
+            transição e processos seletivos" ||
             15h20 - 16h00: !isabelle com o tema "PJotinha, vale mesmo a
             pena?" || 16h05 - 17h30: !rodadeconversa
             '''
@@ -267,6 +268,16 @@ class Bot(commands.Bot):
             kamila code. É também participante da nossa roda
             de conversa sobre Carreiras em Tecnologia. Conheça
             e acompanhe seu trabalho: https://beacons.page/kamila_code'''
+        )
+
+    @commands.command(name='isabela')
+    async def cmd_isabela(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} Isabela Norton (ela/dela) é Tech
+            Recruiter. É também participante da nossa roda de
+            conversa sobre Carreiras em Tecnologia. Conheça e acompanhe
+            seu trabalho: Twitter https://twitter.com/isanortontech e
+            Linkedin https://www.linkedin.com/in/isabelanorton/ '''
         )
 
     # @commands.command(name='sorteio')
