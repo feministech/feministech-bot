@@ -21,4 +21,8 @@ STREAMERS = [
     'moniquelive',
     'punkdodevops',
     'ehmuitodrama',
-    'lissadev']
+    'lissadev',
+    'danicaus',
+
+
+    ]
