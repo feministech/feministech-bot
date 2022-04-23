@@ -111,17 +111,12 @@ class Bot(commands.Bot):
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} Dia 23, às 12:45, no canal da Morganna
-            estaremos realizando o nosso evento Feministalk: Carreiras
-            para compartilharmos juntes um excelente conteúdo, contando
-            com apoio de pessoas profissionais da área. Aproveitem para
-            compartilhar, fazer networking e tirarem dúvidas. Para uma
-            boa experiência para todes, conheçam nosso Código de Conduta:
-            digite !conduta no chat.'''
-        )
-        await ctx.send(
-            '''!sh @morgannadev
-            '''
+            f'''{ctx.author.name} Hoje estamos realizando o nosso
+            evento Feministalk: Carreiras para compartilharmos
+            juntes um excelente conteúdo, contando com apoio de
+            pessoas profissionais da área. Aproveitem para compartilhar,
+            fazer networking e tirarem dúvidas. Para uma boa experiência
+            para todes, conheçam nosso Código de Conduta: digite !conduta no chat.'''
         )
 
     @commands.command(name='rodadeconversa')
@@ -280,14 +275,14 @@ class Bot(commands.Bot):
             Linkedin https://www.linkedin.com/in/isabelanorton/ '''
         )
 
-    # @commands.command(name='sorteio')
-    # async def cmd_sorteio(self, ctx):
-    #     await ctx.send(
-    #         f'''{ctx.author.name} Para participar do sorteio,
-    #         preencha o seguinte formulário:
-    #         https://forms.gle/yhhmooBWikus428v6 e continue
-    #         online conosco para ser considerade.'''
-    #     )
+    @commands.command(name='sorteio')
+    async def cmd_sorteio(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} Para participar do sorteio,
+            preencha o seguinte formulário:
+            https://forms.gle/yhhmooBWikus428v6 e continue
+            online conosco para ser considerade.'''
+        )
 
     @commands.command(name='rainbow')
     async def cmd_rbw(self, ctx):
