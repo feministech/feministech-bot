@@ -12,7 +12,6 @@ STREAMERS = [
     'bug_elseif',
     'pachicodes',
     'xtecna',
-    'snittey',
     'mmillecm',
     'leitoraincomum',
     'morgannadev',
@@ -23,6 +22,6 @@ STREAMERS = [
     'ehmuitodrama',
     'lissadev',
     'danicaus',
-
-
+    'unnotedme',
+    'increibleju',
     ]
