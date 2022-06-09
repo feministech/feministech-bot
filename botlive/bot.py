@@ -119,85 +119,11 @@ class Bot(commands.Bot):
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} No dia 28/05, das 10h00 às 12h00, vamos
-            ter o evento “Feministalk: Como se tornar uma Feministreamer”
-            para compartilharmos sobre como começar a fazer lives na Twitch.
-            Teremos a @gikapassuti como host, então já deixa o follow no
-            canal dela: https://www.twitch.tv/gikapassuti '''
+            f'''{ctx.author.name} No dia 25/06 vamos
+            ter o evento “Feministalk: Acessibilidade”.
+            Teremos a @unnotedme como host, então já deixa o follow no
+            canal dela: twitch.tv/unnotedme '''
         )
-
-    @commands.command(name='gisele')
-    async def cmd_gisele(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} Gisele (ela/dela) iniciou a carreira em
-            TI na área de testes e recentemente migrou para DevRel.
-            Produtora de conteúdo, (aspirante) a streamer e palestrante
-            gosta muito de aprender e compartilhar conhecimento. |
-            IG https://www.instagram.com/gikatips/ | TT https://twitter.com/gikatips '''
-        )
-
-    @commands.command(name='levxyca')
-    async def cmd_levxyca(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} Leticia 'levxyca' (ela/dela) é desenvolvedora web
-            front-end, streamer, criadora de conteúdo de tecnologia/programação,
-            cofundadora/coordenadora da @feminis_tech e tech community
-            manager na http://abacatinhos.dev. Conheça mais sobre ela:
-            https://links.levxyca.com/ '''
-        )
-
-    @commands.command(name='tecna')
-    async def cmd_tecna(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} Raquel Marcolino (ela/dela) é desenvolvedora
-            backend e doutoranda em Inteligência Artificial. Conheça mais
-            sobre ela: Twitter: https://twitter.com/RaquelTecna | Instagram:
-            https://www.instagram.com/RaquelTecna/ | Twitch: https://www.twitch.tv/xtecna '''
-        )
-
-    @commands.command(name='amanda')
-    async def cmd_amanda(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} Amanda Martins Xavier (ela/dela) é desenvolvedora de software.
-            Conheça mais sobre ela: https://amandamartins.dev/'''
-        )
-
-
-    @commands.command(name='danicaus')
-    async def cmd_danicaus(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} Dani Caus (ela/dela) é desenvolvedora frontend.
-            Conheça mais sobre ela: https://www.twitch.tv/danicaus'''
-        )
-
-
-    @commands.command(name='sejogaaline')
-    async def cmd_sejogaaline(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} Aline (ela/dela) é analista de automatização de
-            processos com robôs que agora transicionando para front-end.
-            Conheça mais sobre ela: https://www.twitch.tv/sejogaaline |
-            https://www.instagram.com/sejogaaline/ '''
-        )
-
-    @commands.command(name='alinepontocom')
-    async def cmd_alinepontocom(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} Aline (ela/dela) é analista de automatização de
-            processos com robôs que agora transicionando para front-end.
-            Conheça mais sobre ela: https://www.twitch.tv/sejogaaline |
-            https://www.instagram.com/sejogaaline/ '''
-        )
-
-    @commands.command(name='morganna')
-    async def cmd_morganna(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} Morganna (ela/dela) é devRel, co-fundadora
-            Feministech, co-fundadora Kotlinautas, bancada da Mlkda da DeepWeb.
-            Conheça mais sobre ela: https://morganna.dev/ '''
-        )
-
-
 
 
     @commands.command(name='rainbow')
