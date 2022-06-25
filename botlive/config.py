@@ -25,4 +25,5 @@ STREAMERS = [
     'unnotedme',
     'increibleju',
     'andreiammm',
+    'patriciavob'
     ]
