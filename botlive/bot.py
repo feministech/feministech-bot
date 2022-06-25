@@ -119,12 +119,64 @@ class Bot(commands.Bot):
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} No dia 25/06 vamos
+            f'''{ctx.author.name} - No dia 25/06 vamos
             ter o evento “Feministalk: Acessibilidade”.
             Teremos a @unnotedme como host, então já deixa o follow no
             canal dela: twitch.tv/unnotedme '''
         )
 
+    @commands.command(name='palestras')
+    async def cmd_palestras(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - Livia "Acessibilidade no
+            contexto de criação de algo: da ideia ao teste" |
+            Victoria "Acessibilidade digital, é sobre quem?" |
+            Marilia "Acessibilidade para Devs" |
+            Roda de conversa contamos também com: Sandyara (ela/dela),
+            Ana Gouvea (ela/dela) '''
+        )
+
+
+    @commands.command(name='livia')
+    async def cmd_livia(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} Livia (ela/dela) é coordenadora de Produtos
+            e Acessibilidade e especialista em UX Design. Encontre ela em:
+            linkedin.com/liviagabos | twitter.com/liviagabos '''
+        )
+
+    @commands.command(name='victoria')
+    async def cmd_victoria(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} Victoria (ela/dela) é Analista de Qualidade
+            de Software e palestrante em diversos eventos. Encontre ela em:
+            linkedin.com/in/victoria-raupp | medium.com/@victoriaraupp '''
+        )
+
+    @commands.command(name='marilia')
+    async def cmd_marilia(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} Marilia (ela/dela)Engenheira de Software,
+            que escova pixels. Autista com hiperfoco em acessibilidade
+            digital. Criadora do @accessibility4devs. Humana de estimação
+            da Yuumi e do Matz. Encontre ela em:
+            linktr.ee/accessibility4devs | linkedin.com/in/gabrielesuzart |
+            instagram.com/accessibility4devs '''
+        )
+
+    @commands.command(name='sandyara')
+    async def cmd_sandyara(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} Sandyara (ela/dela) é coordenadora de
+            acessibilidade. Encontre ela em: sandyaraperes.com.br '''
+        )
+
+    @commands.command(name='ana')
+    async def cmd_ana(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} Ana (ela/dela)Analista de acessibilidade.
+            Encontre ela em: linkedin.com/in/aanagouvea '''
+        )
 
     @commands.command(name='rainbow')
     async def cmd_rbw(self, ctx):
