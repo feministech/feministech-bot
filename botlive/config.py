@@ -20,10 +20,14 @@ STREAMERS = [
     'moniquelive',
     'punkdodevops',
     'ehmuitodrama',
-    'lissadev',
+    'lissatransborda',
     'danicaus',
     'unnotedme',
     'increibleju',
     'andreiammm',
-    'patriciavob'
+    'patriciavob',
+    'gikapassuti',
+    'sejogaaline',
+    'amandamartinsdev',
+    'karennovaesd',
     ]
