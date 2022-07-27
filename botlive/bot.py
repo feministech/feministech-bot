@@ -72,7 +72,7 @@ class Bot(commands.Bot):
     @commands.command(name='recomenda')
     async def cmd_recomenda(self, ctx):
         await ctx.send(
-            f'''{self.recomeda.get_random()} -{ctx.author.name} '''
+            f'''{self.recomeda.get_random()}'''
             )
 
     @commands.command(name='feministech')
