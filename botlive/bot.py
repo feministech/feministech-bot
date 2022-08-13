@@ -119,10 +119,74 @@ class Bot(commands.Bot):
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Feminisferias!! Fiquem ligados no twitter
-             twitter.com/feminis_tech '''
+            f'''{ctx.author.name} - No dia 27/08, às 14h, vamos
+            ter o evento “Feministalk: Como escrever um livro”.
+            Com a @karennovaesd e @patriciavob como host, então já deixa o
+            follow no canal: twitch.tv/karennovaesd '''
         )
 
+    @commands.command(name='palestras')
+    async def cmd_palestras(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - 14:00 Introdução ao evento |
+            14:15 Pachi apresenta “Como começar: Da proposta aos primeiros capítulos” |
+            14:55 Loiane apresenta “5 Dicas de Como Escrever um Livro de Tecnologia” |
+            15:35 Entrevistando Vivian Matsui'''
+        )
+
+    @commands.command(name='vivian')
+    async def cmd_vivian(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - Vivian Matsui (ela/dela) é editora de livros.
+            Encontre ela em: linkedin.com/in/vivianmatsui/
+            | instagram.com/vivianmatsui/ '''
+        )
+
+    @commands.command(name='loiane')
+    async def cmd_loiane(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - Loiane Groner (ela/dela) é
+            possui 15+ anos de experiência em TI, trabalha na área de
+            desenvolvimento de software nos Estados Unidos e ama compartilhar
+            conhecimento! Palestrante internacional e autora de livros
+            publicados mundialmente (com tradução para chinês, coreano e português).
+            É Google Developer Expert, Microsoft MVP,
+            '''
+        )
+        await ctx.send('''Sencha MVP, Oracle ACE e Java Champion. Publica tutoriais
+            técnicos no Youtube, oferece cursos gratuitos em https://loiane.training e
+            escreve para o blog https://loiane.com.
+            Encontre ela em: twitter.com/loiane | github.com/loiane | instagram.com/loiane
+            youtube.com/loianegroner '''
+        )
+
+
+    @commands.command(name='pachi')
+    async def cmd_pachi(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - Pachi Parra (ela/dela) DevRel (Relacionamentos com
+            Pessoas Desenvolvedoras), Co-Fundadora da @feministech.
+            Encontre ela em: twitter.com/pachicodes '''
+        )
+
+
+    @commands.command(name='karen')
+    async def cmd_karen(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - Karen Novaes (ela/dela) SRE e produtora de conteúdo.
+            Encontre ela em: twitter.com/novaes_karen '''
+        )
+
+    @commands.command(name='patricia')
+    async def cmd_patricia(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - Patrícia Villela (ela/dela) Compositora de software.
+            Encontre ela em: br.linkedin.com/in/patriciavob | github.com/patriciavillela |
+            instagram.com/patriciavob | dev.to/patriciavillela |
+            twitter.com/patriciaverso | polywork.com/patriciavillela |
+            youtube.com/channel/UCq4Dvs9TkKAPQFbAMvrI8hg |
+            patriciavillela.com.br  | twitch.tv/patriciaverso '''
+        )
 
     @commands.command(name='rainbow')
     async def cmd_rbw(self, ctx):
