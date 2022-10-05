@@ -119,47 +119,46 @@ class Bot(commands.Bot):
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - No dia 27/08, às 14h, vamos
-            ter o evento “Feministalk: Como escrever um livro”.
-            Com a @karennovaesd e @patriciavob como host, então já deixa o
-            follow no canal: twitch.tv/karennovaesd '''
+            f'''{ctx.author.name} - No dia 08/10, às 14h, vamos
+            ter o evento “Feministalk: Hacktoberfest”.
+            Um evento dedicado a falarmos sobre o maior evento
+            de contribuição do mundo.
+            Com a @danicaus como host, então já deixa o
+            follow no canal: twitch.tv/danicaus '''
         )
 
     @commands.command(name='palestras')
     async def cmd_palestras(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - 14:00 Introdução ao evento |
-            14:15 Pachi apresenta “Como começar: Da proposta aos primeiros capítulos” |
-            14:55 Loiane apresenta “5 Dicas de Como Escrever um Livro de Tecnologia” |
-            15:35 Entrevistando Vivian Matsui'''
-        )
-
-    @commands.command(name='vivian')
-    async def cmd_vivian(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} - Vivian Matsui (ela/dela) é editora de livros.
-            Encontre ela em: linkedin.com/in/vivianmatsui/
-            | instagram.com/vivianmatsui/ '''
-        )
-
-    @commands.command(name='loiane')
-    async def cmd_loiane(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} - Loiane Groner (ela/dela) é
-            possui 15+ anos de experiência em TI, trabalha na área de
-            desenvolvimento de software nos Estados Unidos e ama compartilhar
-            conhecimento! Palestrante internacional e autora de livros
-            publicados mundialmente (com tradução para chinês, coreano e português).
-            É Google Developer Expert, Microsoft MVP,
+            f'''{ctx.author.name} - 14:00 Abertura do evento |
+            14:15 Keynote Pachi, Devrel no Github |
+            14:55 Bruna apresenta "O que é e como participar do evento Hacktoberfest" |
+            15:35 Andressa apresenta "Aprendendo Git e Github" |
+            16:05 Patrícia apresenta "O que é open source e como fazer um PR para contribuir"
             '''
         )
-        await ctx.send('''Sencha MVP, Oracle ACE e Java Champion. Publica tutoriais
-            técnicos no Youtube, oferece cursos gratuitos em https://loiane.training e
-            escreve para o blog https://loiane.com.
-            Encontre ela em: twitter.com/loiane | github.com/loiane | instagram.com/loiane
-            youtube.com/loianegroner '''
+
+    @commands.command(name='dani')
+    async def cmd_dani(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - Dani Caus (ela/dela) Desenvolvedora de software.
+            Encontre ela em: https://danicaus.dev/  '''
         )
 
+    @commands.command(name='andressa')
+    async def cmd_andressa(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - Andressa Codes (ela/dela) Analista de Operações
+            Sênior Sites e Mautic. Criadora de conteúdo com mais de 10 anos de
+            experiência em conteúdo digital de tecnologia. Com foco em programação
+            e transição de carreira pela comunidade Andressa Codes.  Ajudo
+            contribuindo com contéudo voltado desde iniciantes a intermediários.
+            '''
+        )
+        await ctx.send('''
+            Encontre ela em: twitter.com/andressacodes/status/1498057751876063238
+            '''
+        )
 
     @commands.command(name='pachi')
     async def cmd_pachi(self, ctx):
@@ -169,23 +168,19 @@ class Bot(commands.Bot):
             Encontre ela em: twitter.com/pachicodes '''
         )
 
-
-    @commands.command(name='karen')
-    async def cmd_karen(self, ctx):
+    @commands.command(name='bruna')
+    async def cmd_bruna(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Karen Novaes (ela/dela) SRE e produtora de conteúdo.
-            Encontre ela em: twitter.com/novaes_karen '''
+            f'''{ctx.author.name} - Bruna Ferreira (ela/dela)
+            Estudante de Ciência da computação, uma deusa, uma louca, uma feiticeira dos codes.
+            Encontre ela em: instagram.com/bug.elseif, twitter.com/bug_elseif'''
         )
 
     @commands.command(name='patricia')
     async def cmd_patricia(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Patrícia Villela (ela/dela) Compositora de software.
-            Encontre ela em: br.linkedin.com/in/patriciavob | github.com/patriciavillela |
-            instagram.com/patriciavob | dev.to/patriciavillela |
-            twitter.com/patriciaverso | polywork.com/patriciavillela |
-            youtube.com/channel/UCq4Dvs9TkKAPQFbAMvrI8hg |
-            patriciavillela.com.br  | twitch.tv/patriciaverso '''
+            f'''{ctx.author.name} - Patrícia Villela (ela/dela) Encantadora de bits.
+            Encontre ela em: twitter.com/patriciaverso'''
         )
 
     @commands.command(name='rainbow')
