@@ -179,7 +179,9 @@ class Bot(commands.Bot):
     @commands.command(name='patricia')
     async def cmd_patricia(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Patrícia Villela (ela/dela) Encantadora de bits.
+            f'''{ctx.author.name} - Patrícia Villela (ela/dela) Engenheira de Software desde
+            que se entende por gente. Apaixonada por regex e por programação além do saudável,
+            e está muito feliz com isso.
             Encontre ela em: twitter.com/patriciaverso'''
         )
 
