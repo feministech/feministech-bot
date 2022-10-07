@@ -25,7 +25,7 @@ STREAMERS = [
     'unnotedme',
     'increibleju',
     'andreiammm',
-    'patriciavob',
+    'patriciaverso',
     'gikapassuti',
     'sejogaaline',
     'amandamartinsdev',
