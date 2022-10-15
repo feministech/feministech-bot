@@ -119,70 +119,88 @@ class Bot(commands.Bot):
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - No dia 08/10, às 14h, vamos
-            ter o evento “Feministalk: Hacktoberfest”.
-            Um evento dedicado a falarmos sobre o maior evento
-            de contribuição do mundo.
-            Com a @danicaus como host, então já deixa o
-            follow no canal: twitch.tv/danicaus '''
+            f'''{ctx.author.name} - No dia 18/10, às 18h, vamos
+            ter o evento “Feministalk: Ada Lovelace”.
+            Com a @morgannadev como host, então já deixa o
+            follow no canal: twitch.tv/morgannadev '''
         )
 
     @commands.command(name='palestras')
     async def cmd_palestras(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - 14:00 Abertura do evento |
-            14:15 Keynote Pachi, Devrel no Github |
-            14:55 Bruna apresenta "O que é e como participar do evento Hacktoberfest" |
-            15:35 Andressa apresenta "Aprendendo Git e Github" |
-            16:05 Patrícia apresenta "O que é open source e como fazer um PR para contribuir"
+            f'''{ctx.author.name} -
+            18h00 Abertura e palestra sobre a Ada Lovelace com a !morganna |
+            18h20 “O que gostaria de saber antes de se tornar desenvolvedora” com a !jessica |
+            18h55 “Arquitetura de microsserviços” com !nathally |
+            19h30 “palestra sobre design de API” com !patricia |
+            20h05 !rodadeconversa
             '''
         )
 
-    @commands.command(name='dani')
-    async def cmd_dani(self, ctx):
+    @commands.command(name='rodadeconversa')
+    async def cmd_rodadeconversa(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Dani Caus (ela/dela) Desenvolvedora de software.
-            Encontre ela em: https://danicaus.dev/  '''
+            f'''{ctx.author.name} - Vamos ter uma conversa sobre como
+            usar a comunicação para evoluir tecnicamente e contaremos
+            com a presença de !jessica, !patricia, !nathally, !pachi, !kamila.'''
         )
 
-    @commands.command(name='andressa')
-    async def cmd_andressa(self, ctx):
+    @commands.command(name='morganna')
+    async def cmd_morganna(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Andressa Codes (ela/dela) Analista de Operações
-            Sênior Sites e Mautic. Criadora de conteúdo com mais de 10 anos de
-            experiência em conteúdo digital de tecnologia. Com foco em programação
-            e transição de carreira pela comunidade Andressa Codes.  Ajudo
-            contribuindo com contéudo voltado desde iniciantes a intermediários.
-            '''
+            f'''{ctx.author.name} - A Morganna Giovanelli (ela/dela) é Devrel,
+            criadora de conteúdo, e cofundadora da Feministech e da Kotlinautas.
+            Conheça e acompanhe a Kamila: https://twitter.com/morgannadev'''
         )
-        await ctx.send('''
-            Encontre ela em: twitter.com/andressacodes/status/1498057751876063238
-            '''
+
+    @commands.command(name='kamila')
+    async def cmd_kamila(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - A Kamila Santos (ela/dela) é tech lead e vai
+            participar conosco da roda de conversa sobre como usar a
+            comunicação para evoluir tecnicamente. Conheça e acompanhe
+            a Kamila: https://beacons.ai/kamila_code'''
         )
 
     @commands.command(name='pachi')
     async def cmd_pachi(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Pachi Parra (ela/dela) DevRel (Relacionamentos com
-            Pessoas Desenvolvedoras), Co-Fundadora da @feministech.
-            Encontre ela em: twitter.com/pachicodes '''
+            f'''{ctx.author.name} - A Pachi Parra (ela/dela) é developer advocate e
+            vai participar conosco da roda de conversa sobre como usar a
+            comunicação para evoluir tecnicamente. Conheça e acompanhe a
+            Pachi: https://twitter.com/pachicodes'''
         )
 
-    @commands.command(name='bruna')
-    async def cmd_bruna(self, ctx):
+    @commands.command(name='nathally')
+    async def cmd_nathally(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Bruna Ferreira (ela/dela)
-            Estudante de Ciência da computação, uma deusa, uma louca, uma feiticeira dos codes.
-            Encontre ela em: instagram.com/bug.elseif, twitter.com/bug_elseif'''
+            f'''{ctx.author.name} - A Nathally Souza (ela/dela) é tech lead e vai
+            conversar conosco sobre arquitetura de microsserviços. E depois
+            vai participar conosco da roda de conversa sobre como usar a
+            comunicação para evoluir tecnicamente. Conheça e acompanhe a
+            Nath: https://twitter.com/nathsouzadev https://instagram.com/nathallyts
+            https://www.linkedin.com/in/nathsouza'''
         )
 
     @commands.command(name='patricia')
     async def cmd_patricia(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Patrícia Villela (ela/dela) Engenheira de Software desde
-            que se entende por gente. Apaixonada por regex e por programação além do saudável,
-            e está muito feliz com isso.
-            Encontre ela em: twitter.com/patriciaverso'''
+            f'''{ctx.author.name} - A Patrícia Villela (ela/dela) é engenheira de software
+            e vai conversar conosco sobre design de API. E depois vai participar
+            conosco da roda de conversa sobre como usar a comunicação para evoluir
+            tecnicamente. Conheça e acompanhe a Patrícia:
+            https://twitter.com/patriciaverso'''
+        )
+
+    @commands.command(name='jessica')
+    async def cmd_jessica(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - A Jessica Trindade (ela/dela) é desenvolvedora iOS e vai
+            conversar conosco sobre coisas que seriam boas de saber antes de se
+            tornar uma pessoa desenvolvedora. E depois vai participar conosco da
+            roda de conversa sobre como usar a comunicação para evoluir tecnicamente.
+            Conheça e acompanhe a Jessica:
+            https://www.linkedin.com/in/jessicalinotrindade'''
         )
 
     @commands.command(name='rainbow')
