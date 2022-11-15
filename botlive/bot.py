@@ -119,60 +119,58 @@ class Bot(commands.Bot):
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - No dia 18/10, às 18h, vamos
-            ter o evento “Feministalk: Ada Lovelace”.
-            Com a @morgannadev como host, então já deixa o
-            follow no canal: twitch.tv/morgannadev '''
+            f'''{ctx.author.name} - No dia 20/11, às 14h
+            vamos ter o evento “Maratona Feministech 2022”.
+            Com a @gikapassuti como host, então já deixa o
+            follow no canal: twitch.tv/gikapassuti
+            '''
         )
 
     @commands.command(name='palestras')
     async def cmd_palestras(self, ctx):
         await ctx.send(
             f'''{ctx.author.name} -
-            18h00 Abertura e palestra sobre a Ada Lovelace com a !morganna |
-            18h20 “O que gostaria de saber antes de se tornar desenvolvedora” com a !jessica |
-            18h55 “Arquitetura de microsserviços” com !nathally |
-            19h30 “palestra sobre design de API” com !patricia |
-            20h05 !rodadeconversa
+            14h00 Abertura !gika |
+            14h10 UX com a !bia |
+            15h10 QA com a !gika |
+            15h40 Banco de dados com a !ka |
+            16h10 Backend com a !nath |
+            17h10 Frontend com a !natalia |
+            18h10 QA com a !gika |
+            18h40 Agradecimento
             '''
         )
 
-    @commands.command(name='rodadeconversa')
-    async def cmd_rodadeconversa(self, ctx):
+    @commands.command(name='gika')
+    async def cmd_gika(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Vamos ter uma conversa sobre como
-            usar a comunicação para evoluir tecnicamente e contaremos
-            com a presença de !jessica, !patricia, !nathally, !pachi, !kamila.'''
+            f'''{ctx.author.name} - A Gisele Passuti (ela/dela)
+            é DevRel na db1group,
+            coordenadora na @feministech, com coraçãozinho
+            na qualidade de software. Conheça e acompanhe a
+            Gika: https://twitter.com/gikapassuti
+            '''
         )
 
-    @commands.command(name='morganna')
-    async def cmd_morganna(self, ctx):
+    @commands.command(name='bia')
+    async def cmd_bia(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - A Morganna Giovanelli (ela/dela) é Devrel,
-            criadora de conteúdo, e cofundadora da Feministech e da Kotlinautas.
-            Conheça e acompanhe a Kamila: https://twitter.com/morgannadev'''
+            f'''{ctx.author.name} - A Bianca Peninga (ela/dela)
+            é designer. Conheça e acompanhe a
+            Bia: https://linkedin.com/in/biancapeninga/
+            '''
         )
 
-    @commands.command(name='kamila')
-    async def cmd_kamila(self, ctx):
+    @commands.command(name='ka')
+    async def cmd_ka(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - A Kamila Santos (ela/dela) é tech lead e vai
-            participar conosco da roda de conversa sobre como usar a
-            comunicação para evoluir tecnicamente. Conheça e acompanhe
-            a Kamila: https://beacons.ai/kamila_code'''
+            f'''{ctx.author.name} - A Kamila Santos (ela/dela) é
+            Tech lead na zup innovation. Conheça e acompanhe a
+            Kamila: https://beacons.ai/kamila_code'''
         )
 
-    @commands.command(name='pachi')
-    async def cmd_pachi(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} - A Pachi Parra (ela/dela) é developer advocate e
-            vai participar conosco da roda de conversa sobre como usar a
-            comunicação para evoluir tecnicamente. Conheça e acompanhe a
-            Pachi: https://twitter.com/pachicodes'''
-        )
-
-    @commands.command(name='nathally')
-    async def cmd_nathally(self, ctx):
+    @commands.command(name='nath')
+    async def cmd_nath(self, ctx):
         await ctx.send(
             f'''{ctx.author.name} - A Nathally Souza (ela/dela) é tech lead e vai
             conversar conosco sobre arquitetura de microsserviços. E depois
@@ -182,25 +180,27 @@ class Bot(commands.Bot):
             https://www.linkedin.com/in/nathsouza'''
         )
 
-    @commands.command(name='patricia')
-    async def cmd_patricia(self, ctx):
+    @commands.command(name='natalia')
+    async def cmd_natalia(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - A Patrícia Villela (ela/dela) é engenheira de software
-            e vai conversar conosco sobre design de API. E depois vai participar
-            conosco da roda de conversa sobre como usar a comunicação para evoluir
-            tecnicamente. Conheça e acompanhe a Patrícia:
-            https://twitter.com/patriciaverso'''
+            f'''{ctx.author.name} - A Natália (ela/dela) é
+            Desenvolvedora front-end e artista de CSS.
+            Conheça e acompanhe a Natália:
+            https://www.linkedin.com/in/natalia-f-da-silva/ |
+            https://www.tiktok.com/@nataliafdev'''
         )
 
-    @commands.command(name='jessica')
-    async def cmd_jessica(self, ctx):
+    @commands.command(name='ReveloCommunity')
+    async def cmd_ReveloCommunity(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - A Jessica Trindade (ela/dela) é desenvolvedora iOS e vai
-            conversar conosco sobre coisas que seriam boas de saber antes de se
-            tornar uma pessoa desenvolvedora. E depois vai participar conosco da
-            roda de conversa sobre como usar a comunicação para evoluir tecnicamente.
-            Conheça e acompanhe a Jessica:
-            https://www.linkedin.com/in/jessicalinotrindade'''
+            f'''{ctx.author.name} - A Revelo Community é uma
+            iniciativa da Revelo que tem como objetivo elevar
+            as carreiras dos profissionais de tecnologia
+            oferecendo conteúdo de qualidade sobre o mundo tech
+            por meio das redes sociais, podcasts, eventos e conteúdos
+            no blog, os quais você pode contribuir e ser remunerada
+            em dólares. Para saber mais, acesse o Instagram
+            @revelocobrazil ou o nosso blog https://community.revelo.com'''
         )
 
     @commands.command(name='rainbow')
