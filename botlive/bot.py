@@ -126,6 +126,24 @@ class Bot(commands.Bot):
             '''
         )
 
+    @commands.command(name='maratona')
+    async def cmd_maratona(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - A Maratona Feministech é um evento
+            marcante da comunidade que acontece anualmente para compartilharmos
+            conhecimento de diversas streamers.
+        '''
+        )
+        await ctx.send(
+            f'''Este ano de 2022, pretendemos
+            realizar um evento para construir um sistema simples que tenha como
+            produto final um site de cadastro de comunidades de tecnologia,
+            com o objetivo de mostrar como funciona o desenvolvimento de um
+            site de ponta a ponta (banco de dados, frontend, backend e deploy
+            em produção), além de divulgar diversas iniciativas de tecnologia.
+        '''
+        )
+
     @commands.command(name='palestras')
     async def cmd_palestras(self, ctx):
         await ctx.send(
@@ -137,7 +155,8 @@ class Bot(commands.Bot):
             16h10 Backend com a !nath |
             17h10 Frontend com a !natalia |
             18h10 QA com a !gika |
-            18h40 Agradecimento
+            18h40 Deploy com a !nath |
+            19h10 Agradecimento
             '''
         )
 
