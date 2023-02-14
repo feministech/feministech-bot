@@ -37,10 +37,10 @@ Para que o bot possa funcionar no chat da sua live, você deve criar um arquivo 
 
 ```ini
 [config]
-token = 'xxxxxxxxxx'
-username = 'xxxxxxxxxx'
-bots = 'xxxxxxxxxx'
-project = 'xxxxxxxxxx'
+token = xxxxxxxxxx
+username = xxxxxxxxxx
+bots = xxxxxxxxxx
+project = xxxxxxxxxx
 ```
 
 Você pode usar como exemplo o arquivo `exemplo_config.ini` como base para o seu. Basta substituir os os campos `xxxxxxxxxx` por suas credenciais.
@@ -51,10 +51,10 @@ Caso você seja uma pessoa nova no mundo dos bots e das lives, aqui fica um exem
 
 | Chave | Valor | Exemplo |
 | ----- | ----- | ------- |
-| token    |       |         |
-| username |       |         |
-| bots     |       |         |
-| project  |       |         |
+| token    | [gerador de token da twitch](https://twitchapps.com/tmi/)  | aouth:******* |
+| username | nome do seu canal | feministech |
+| bots     | outros bots que não responderão aos eventos | steamlabs, streamelements |
+| project  | nome de um projeto que queira divulgar | time de streamers |
 
 ### Execução do bot
 
