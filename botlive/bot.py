@@ -80,7 +80,7 @@ class Bot(commands.Bot):
         await ctx.send(
                 f'''{ctx.author.name} - Feministech é um  grupo de pessoas
                 que se identificam no feminino e não binárias que compartilham
-                o interesse por lives na Twitch. <3 | Siga e apoie: https://twitter.com/feminis_tech'''
+                o interesse por lives na Twitch. <3 | Siga e apoie: https://feministech.com.br/'''
             )
         await ctx.send(
                 f'''{ctx.author.name} - Time da twitch: '
@@ -119,10 +119,19 @@ class Bot(commands.Bot):
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - No dia 20/11, às 14h
-            vamos ter o evento “Maratona Feministech 2022”.
-            Com a @gikapassuti como host, então já deixa o
+            f'''{ctx.author.name} - No dia 04/03 teremos o
+            Feminisocial em parceria com o projeto "Mais
+            Meninas na Tecnologia" às 19h00, horário de Brasília.
+            Teremos a @gikapassuti como host, então já deixa o
             follow no canal: twitch.tv/gikapassuti
+            '''
+        )
+        await ctx.send(
+            f'''{ctx.author.name} - Ainda nesse mês
+            no dia 11/03 teremos nosso próximo
+            Feministalk presencial e será no RJ. Mais
+            informações aqui:
+            https://www.sympla.com.br/evento/feministalk-presencial-rio-de-janeiro/1864354.
             '''
         )
 
@@ -135,8 +144,8 @@ class Bot(commands.Bot):
         '''
         )
         await ctx.send(
-            f'''Este ano de 2022, pretendemos
-            realizar um evento para construir um sistema simples que tenha como
+            f'''No ano de 2022,
+            realizamos um evento para construir um sistema simples que tenha como
             produto final um site de cadastro de comunidades de tecnologia,
             com o objetivo de mostrar como funciona o desenvolvimento de um
             site de ponta a ponta (banco de dados, frontend, backend e deploy
@@ -144,21 +153,6 @@ class Bot(commands.Bot):
         '''
         )
 
-    @commands.command(name='palestras')
-    async def cmd_palestras(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} -
-            14h00 Abertura !gika |
-            14h10 UX com a !bia |
-            15h10 QA com a !gika |
-            15h40 Banco de dados com a !ka |
-            16h10 Backend com a !nath |
-            17h10 Frontend com a !natalia |
-            18h10 QA com a !gika |
-            18h40 Deploy com a !nath |
-            19h10 Agradecimento
-            '''
-        )
 
     @commands.command(name='gika')
     async def cmd_gika(self, ctx):
@@ -171,56 +165,18 @@ class Bot(commands.Bot):
             '''
         )
 
-    @commands.command(name='bia')
-    async def cmd_bia(self, ctx):
+    @commands.command(name='lari')
+    async def cmd_lari(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - A Bianca Peninga (ela/dela)
-            é designer. Conheça e acompanhe a
-            Bia: https://linkedin.com/in/biancapeninga/
+            f'''{ctx.author.name} - Larissa Vitoriano (ela/dela).
+            Fundadora do projeto Mais Meninas na Tecnologia e
+            Community Manager Tech em StackSpot. Você pode
+            encontrá-la nas redes sociais como @laricavitoriano.
+            Conheça mais sobre o projeto: https://maismeninasnatecnologia.com/.
             '''
         )
 
-    @commands.command(name='ka')
-    async def cmd_ka(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} - A Kamila Santos (ela/dela) é
-            Tech lead na zup innovation. Conheça e acompanhe a
-            Kamila: https://beacons.ai/kamila_code'''
-        )
 
-    @commands.command(name='nath')
-    async def cmd_nath(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} - A Nathally Souza (ela/dela) é tech lead e vai
-            conversar conosco sobre arquitetura de microsserviços. E depois
-            vai participar conosco da roda de conversa sobre como usar a
-            comunicação para evoluir tecnicamente. Conheça e acompanhe a
-            Nath: https://twitter.com/nathsouzadev https://instagram.com/nathallyts
-            https://www.linkedin.com/in/nathsouza'''
-        )
-
-    @commands.command(name='natalia')
-    async def cmd_natalia(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} - A Natália (ela/dela) é
-            Desenvolvedora front-end e artista de CSS.
-            Conheça e acompanhe a Natália:
-            https://www.linkedin.com/in/natalia-f-da-silva/ |
-            https://www.tiktok.com/@nataliafdev'''
-        )
-
-    @commands.command(name='ReveloCommunity')
-    async def cmd_ReveloCommunity(self, ctx):
-        await ctx.send(
-            f'''{ctx.author.name} - A Revelo Community é uma
-            iniciativa da Revelo que tem como objetivo elevar
-            as carreiras dos profissionais de tecnologia
-            oferecendo conteúdo de qualidade sobre o mundo tech
-            por meio das redes sociais, podcasts, eventos e conteúdos
-            no blog, os quais você pode contribuir e ser remunerada
-            em dólares. Para saber mais, acesse o Instagram
-            @revelocobrazil ou o nosso blog https://community.revelo.com'''
-        )
 
     @commands.command(name='rainbow')
     async def cmd_rbw(self, ctx):
@@ -236,3 +192,7 @@ class Bot(commands.Bot):
         await ctx.send('💙💙💙💙💙')
         await ctx.send('💜💜💜💜💜')
         await ctx.send('💜💜💜💜💜')
+
+    @commands.command(name='sobe')
+    async def cmd_rbw(self, ctx):
+        await ctx.send('!rainbow')
