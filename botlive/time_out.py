@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from shelve import open as shelve_open
 
 
-class OnePerLive:
+class TimeOut:
     def __init__(self, filename):
         self.filename = filename
         self.file = shelve_open(filename, writeback=True)
