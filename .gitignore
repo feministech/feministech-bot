@@ -1,5 +1,6 @@
 # Editor
 /.vscode/
+.editorconfig
 
 # Configuração
 /config.ini
@@ -20,3 +21,6 @@ __pycache__/
 # Artefatos
 *.egg-info
 /dist/
+
+# Poetry
+poetry.lock
