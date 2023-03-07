@@ -28,7 +28,7 @@ poetry install
 poetry run botlive
 ```
 
-__⚠️ É necessário reiniciar o bot com a tecla de atalho CTRL + C e rodá-lo novamente com o comando acima, a cada alteração feita em seu código.__
+_⚠️ É necessário reiniciar o bot com a tecla de atalho CTRL + C e rodá-lo novamente com o comando acima, a cada alteração feita em seu código._
 
 > 📚 Para mais informações de como configurar o seu ambiente Python com Poetry, acesse a nossa documentação de apoio [clicando aqui](docs/ambiente.md).
 
