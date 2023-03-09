@@ -1,65 +1,51 @@
-# Feministech bot
+# Feministech Bot ✨
 
-Bot da Feministech para Twitch
+> ❓ Este é nosso bot disponível em todos os chats dos canais de pessoas criadoras da comunidade Feministech, foi feito em Python, utilizando o gerenciador de ambientes Poetry e a biblioteca TwitchIO.
 
+## 📋 Requisitos
 
----
+- [Python](https://www.python.org/)
+- [Poetry](https://python-poetry.org/)
+- [TwitchIO](https://twitchio.dev//)
 
+## 🔎 Como utilizar
 
-## Instalação do bot
+Para utilizar o bot, basta clonar o repositório em sua máquina e rodar os seguintes comandos:
 
-Esse bot é feito em [Python](python.org) e usa o genrenciador de ambientes [Poetry](https://python-poetry.org/)
+- Atualizar as dependências:
 
-Caso tenha dificuldades em instalar o Python e o Poetry [Clique aqui!](/docs/instalacao.md)
-
-
-## Como executar o bot?
-
-### Instalação das bibliotecas
-
-Para executar o bot, primeiro você precisa instalar as bibliotecas necessárias. O Poetry pode te ajudar com isso. Você deve navegar no terminal até o diretório do seu projeto e executar:
-
-```bash
+```console
 poetry install
 ```
 
-Após diversas linhas de resposta no termnal, você deve ver a ultima linha:
+- Configure o arquivo `config.ini`.
 
-```bash
-Installing the current project: botlive (0.1.0)
-```
+> 📚 Para mais informações sobre esse arquivo, acesse a nossa documentação de apoio [clicando aqui](docs/configuracao.md).
 
-Isso siginifica que os pacotes do bot foram instalados e agora ele pode executado
+- Executar o bot:
 
-### Configuração das credenciais
-
-Para que o bot possa funcionar no chat da sua live, você deve criar um arquivo `config.ini`. Onde ficarão todas as suas credenciais.
-
-```ini
-[config]
-token = xxxxxxxxxx
-username = xxxxxxxxxx
-bots = xxxxxxxxxx
-project = xxxxxxxxxx
-```
-
-Você pode usar como exemplo o arquivo `exemplo_config.ini` como base para o seu. Basta substituir os os campos `xxxxxxxxxx` por suas credenciais.
-
-#### O que é cada chave?
-
-Caso você seja uma pessoa nova no mundo dos bots e das lives, aqui fica um exemplo do que cada valor siginifica:
-
-| Chave | Valor | Exemplo |
-| ----- | ----- | ------- |
-| token    | [gerador de token da twitch](https://twitchapps.com/tmi/)  | aouth:******* |
-| username | nome do seu canal | feministech |
-| bots     | outros bots que não responderão aos eventos | steamlabs, streamelements |
-| project  | nome de um projeto que queira divulgar | time de streamers |
-
-### Execução do bot
-
-O pacote do bot, quando instalado com sucesso, tem um comando do Poetry para iniciar o bot:
-
-```bash
+```console
 poetry run botlive
 ```
+
+_⚠️ É necessário reiniciar o bot com a tecla de atalho CTRL + C e rodá-lo novamente com o comando acima, a cada alteração feita em seu código._
+
+> 📚 Para mais informações de como configurar o seu ambiente Python com Poetry, acesse a nossa documentação de apoio [clicando aqui](docs/ambiente.md).
+
+## 📋 Issues
+
+Fique à vontade para abrir uma issue caso encontre algum bug ou tenha alguma sugestão, assim podemos discutir o melhor caminho para melhorá-la ou corrigi-lá.
+
+## 👋 Contribuição
+
+Você é sempre bem-vinde para contribuir com este projeto, basta criar sua pull request e aguardar a revisão.
+
+> 💡 Aproveite e confira nas nossas issues, se existe alguma prioridade ou sugestão de contribuição.
+
+## 📎 Links
+
+- [Site oficial da Feministech](https://feministech.com.br/)
+
+## 📜 Licença
+
+Este projeto é feito sobre a licença GNU, para mais informações sobre a sua possível utilização, modificação e compartilhamento, [clique aqui](LICENSE).
