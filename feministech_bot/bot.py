@@ -25,9 +25,9 @@ class Bot(commands.Bot):
     def __init__(self):
         super().__init__(irc_token=TOKEN, nick=USERNAME, prefix='!', initial_channels=CHANNELS)
 
-        self.divulgation = Divulgation('divulgações.ini')
+        self.divulgacoes = Divulgation('divulgações.ini')
         self.boas_vindas = Suppress('boas_vindas.tmp')
-        self.recomenda = RandomList('recomendações.txt')
+        self.recomendacoes = RandomList('recomendações.txt')
 
     # Events
 
@@ -48,7 +48,7 @@ class Bot(commands.Bot):
     async def handle_boas_vindas(self, message):
         name = message.author.name
         if message.content and name not in BOTS and self.boas_vindas.add(name):
-            await message.channel.send(self.divulgation.get_message(name, f'{name} Boas vindas <3'))
+            await message.channel.send(self.divulgacoes.get_message(name, f'{name} Boas vindas <3'))
 
     # Commands
 
@@ -68,9 +68,9 @@ class Bot(commands.Bot):
             )
 
     @commands.command(name='recomenda')
-    async def cmd_recomenda(self, ctx):
+    async def cmd_recomendacoes(self, ctx):
         await ctx.send(
-            f'''{self.recomenda.get_random()}'''
+            f'''{self.recomendacoes.get_random()}'''
             )
 
     @commands.command(name='feministech')
