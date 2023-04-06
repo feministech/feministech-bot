@@ -3,8 +3,12 @@ name: Mkdocs para o GitHub Pages 🚀
 on:
   push:
     branches:
-      - master 
       - main
+    paths:
+      - 'docs/**'
+  pull_request:
+    paths: 
+    - 'docs/**'
 
 permissions:
   contents: write
