@@ -2,8 +2,6 @@
 
 > ❓ Este é nosso bot disponível em todos os chats dos canais de pessoas streamers da comunidade Feministech, foi feito em Python, utilizando o gerenciador de ambientes Poetry, a biblioteca TwitchIO, as ferramentas de qualidade de código blue e isort, com automações utilizando taskipy, e totalmente documentado com Mkdocs.
 
----
-
 ## 📋 Requisitos
 
 ### 🤖 Produção:
@@ -24,8 +22,6 @@
 - [Mkdcostrings (^0.20.0)](https://mkdocstrings.github.io/)
 - [Mkdocstrings-python (^0.9.0)](https://mkdocstrings.github.io/python/)
 - [Termynal (^0.2.1)](https://daxartio.github.io/termynal/)
-
----
 
 ## 🔎 Como utilizar
 
@@ -67,13 +63,9 @@ Para visualizar as alterações feitas na documentação na sua máquina, basta 
 poetry run task docs
 ```
 
----
-
 ## 📋 Issues
 
 Fique à vontade para abrir uma issue caso encontre algum bug ou tenha alguma sugestão, assim podemos discutir o melhor caminho para melhorá-la ou corrigi-lá.
-
----
 
 ## 👋 Contribuição
 
@@ -89,15 +81,11 @@ Finalizados os trabalhos, basta criar sua pull request e aguardar a revisão.
 
 > 💡 Aproveite e confira nas nossas issues, se existe alguma prioridade ou sugestão de contribuição.
 
----
-
 ## 📎 Links
 
 - [Site oficial da Feministech](https://feministech.com.br/)
 - [Site do Time Feministech na Twitch](https://www.twitch.tv/team/livecodergirls)
 - [Documentação Oficial do Bot](https://feministech.github.io/feministech-bot/)
-
----
 
 ## 📜 Licença
 
