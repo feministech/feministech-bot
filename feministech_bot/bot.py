@@ -118,12 +118,17 @@ class Bot(commands.Bot):
 
     ## Events
 
+    """     
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(f'''{ctx.author.name} - No dia 04/03 teremos o Feminisocial em parceria com o projeto "Mais Meninas na Tecnologia" às 19h00, horário de Brasília. Teremos a @gikapassuti como host, então já deixa o follow no canal: https://twitch.tv/gikapassuti.''')
         await ctx.send('''Ainda nesse mês no dia 11/03 teremos nosso próximo Feministalk presencial e será no RJ. Mais informações aqui: https://www.sympla.com.br/evento/feministalk-presencial-rio-de-janeiro/1864354.''')
+    """
 
+    """ 
     @commands.command(name='maratona')
     async def cmd_maratona(self, ctx):
         await ctx.send(f'''{ctx.author.name} - A Maratona Feministech é um evento marcante da comunidade que acontece anualmente para compartilharmos conhecimento de diversas streamers.''')
         await ctx.send('''No ano de 2022, realizamos um evento para construir um sistema simples que tenha como produto final um site de cadastro de comunidades de tecnologia, com o objetivo de mostrar como funciona o desenvolvimento de um site de ponta a ponta (banco de dados, frontend, backend e deploy em produção), além de divulgar diversas iniciativas de tecnologia.''')
+    """
+    
