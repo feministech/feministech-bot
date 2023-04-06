@@ -5,7 +5,7 @@ from twitchio.ext import commands
 from .config import BOTS, CHANNELS, TOKEN, USERNAME
 from .divulgation import Divulgation
 from .random_list import RandomList
-from .time_out import TimeOut
+from .suppress import Suppress
 
 
 def run():
@@ -26,7 +26,7 @@ class Bot(commands.Bot):
         super().__init__(irc_token=TOKEN, nick=USERNAME, prefix='!', initial_channels=CHANNELS)
 
         self.divulgation = Divulgation('divulgações.ini')
-        self.boas_vindas = TimeOut('boas_vindas.tmp')
+        self.boas_vindas = Suppress('boas_vindas.tmp')
         self.recomenda = RandomList('recomendações.txt')
 
     # Events

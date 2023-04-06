@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from shelve import open as shelve_open
 
 
-class TimeOut:
+class Suppress:
     def __init__(self, filename):
         self.filename = filename
         self.file = shelve_open(filename, writeback=True)
