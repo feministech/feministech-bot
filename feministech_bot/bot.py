@@ -34,7 +34,7 @@ class Bot(commands.Bot):
     async def event_ready(self):
         self.channel = self.get_channel(self.nick)
 
-        print(f'Ready | {self.nick}')
+        print('💜 | Conectado a Twitch com sucesso!')
 
     async def event_message(self, message):
         await self.handle_hello(message)
