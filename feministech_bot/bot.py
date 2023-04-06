@@ -18,12 +18,18 @@ def is_mod(f):
     async def wrapper(self, ctx):
         if ctx.author.is_mod:
             await f(self, ctx)
+
     return wrapper
 
 
 class Bot(commands.Bot):
     def __init__(self):
-        super().__init__(irc_token=TOKEN, nick=USERNAME, prefix='!', initial_channels=CHANNELS)
+        super().__init__(
+            irc_token=TOKEN,
+            nick=USERNAME,
+            prefix='!',
+            initial_channels=CHANNELS,
+        )
 
         self.divulgacoes = Divulgation('divulgações.ini')
         self.boas_vindas = Suppress('boas_vindas.tmp')
@@ -48,7 +54,9 @@ class Bot(commands.Bot):
     async def handle_boas_vindas(self, message):
         name = message.author.name
         if message.content and name not in BOTS and self.boas_vindas.add(name):
-            await message.channel.send(self.divulgacoes.get_message(name, f'{name} boas-vindas! <3'))
+            await message.channel.send(
+                self.divulgacoes.get_message(name, f'{name} boas-vindas! <3')
+            )
 
     # Commands
 
@@ -84,51 +92,115 @@ class Bot(commands.Bot):
 
     @commands.command(name='feministech')
     async def cmd_feministech(self, ctx):
-        await ctx.send(f'''{ctx.author.name} - A Feministech é um grupo de pessoas que se identificam no feminino e não-bináries que produzem, consomem e compartilham conteúdo sobre tecnologia, enquanto constroem uma comunidade diversa e inclusiva. <3 | Siga e apoie: https://feministech.com.br/''')
-        await ctx.send(f'''{ctx.author.name} - Time da twitch: https://www.twitch.tv/team/livecodergirls | Twitter: https://twitter.com/feminis_tech | Instagram: https://www.instagram.com/feminis_tech/ | Linkedin: https://www.linkedin.com/company/feministech/ | Github: https://github.com/feministech.''')
+        await ctx.send(
+            f"""{ctx.author.name} - A Feministech é um grupo de pessoas que se 
+              identificam no feminino e não-bináries que produzem, consomem e 
+              compartilham conteúdo sobre tecnologia, enquanto constroem uma 
+              comunidade diversa e inclusiva. <3 | Siga e apoie: 
+              https://feministech.com.br/"""
+        )
+        await ctx.send(
+            f"""{ctx.author.name} - Time da twitch: 
+            https://www.twitch.tv/team/livecodergirls | Twitter: 
+            https://twitter.com/feminis_tech | Instagram: 
+            https://www.instagram.com/feminis_tech/ | Linkedin: 
+            https://www.linkedin.com/company/feministech/ | Github: 
+            https://github.com/feministech."""
+        )
 
     @commands.command(name='streamers')
     async def cmd_streamers(self, ctx):
-        await ctx.send(f'''{ctx.author.name} - Conheça as pessoas streamers incríveis da nossa comunidade, assista e apoie: https://www.twitch.tv/team/livecodergirls. <3''')
+        await ctx.send(
+            f"""{ctx.author.name} - Conheça as pessoas streamers incríveis da 
+            nossa comunidade, assista e apoie: 
+            https://www.twitch.tv/team/livecodergirls. <3"""
+        )
 
     @commands.command(name='podcast')
     async def cmd_podcast(self, ctx):
-        await ctx.send(f'''{ctx.author.name} - Conheça o Feministech Podcast, um podcast feito por uma equipe de pessoas maravilhosas que trabalham ou estudam tecnologia! | https://anchor.fm/feministech.''')
+        await ctx.send(
+            f"""{ctx.author.name} - Conheça o Feministech Podcast, um podcast 
+            feito por uma equipe de pessoas maravilhosas que trabalham ou 
+            estudam tecnologia! | https://anchor.fm/feministech."""
+        )
 
     @commands.command(name='conduta')
     async def cmd_conduta(self, ctx):
-        await ctx.send(f'''{ctx.author.name} - O mais importante por aqui é o respeito. Conheça o Código de Conduta da nossa comunidade: https://github.com/feministech/codigo-de-conduta. :)''')
+        await ctx.send(
+            f"""{ctx.author.name} - O mais importante por aqui é o respeito. 
+            Conheça o Código de Conduta da nossa comunidade: 
+            https://github.com/feministech/codigo-de-conduta. :)"""
+        )
 
     ## Caverna
 
     @commands.command(name='caverna')
     async def cmd_caverna(self, ctx):
-        await ctx.send(f'''{ctx.author.name} - A Caverna é uma comunidade de pessoas desenvolvedoras de todos os níveis e das mais variadas especializacões | http://caverna.live/. PowerUpL''')
-        await ctx.send('''Discord: http://caverna.live/discord | Por favor, não se esqueça de passar no canal #🆁🅴🅶🆁🅰🆂 para liberar o acesso á todas as salas do nosso servidor. PowerUpR''')
+        await ctx.send(
+            f"""{ctx.author.name} - A Caverna é uma comunidade de pessoas 
+            desenvolvedoras de todos os níveis e das mais variadas 
+            especializacões | http://caverna.live/. PowerUpL"""
+        )
+        await ctx.send(
+            """Discord: http://caverna.live/discord | Por favor, não se 
+            esqueça de passar no canal #🆁🅴🅶🆁🅰🆂 para liberar o acesso á todas 
+            as salas do nosso servidor. PowerUpR"""
+        )
 
     ## Misc.
 
     @commands.command(name='gika')
     async def cmd_gika(self, ctx):
-        await ctx.send(f'''{ctx.author.name} - A Gisele Passuti (ela/dela) é DevRel na db1group, coordenadora na @feministech, e tem um coraçãozinho na qualidade de software. | Conheça e acompanhe a Gika: https://twitter.com/gikapassuti.''')
+        await ctx.send(
+            f"""{ctx.author.name} - A Gisele Passuti (ela/dela) é DevRel na 
+            db1group, coordenadora na @feministech, e tem um coraçãozinho na 
+            qualidade de software. | Conheça e acompanhe a Gika: 
+            https://twitter.com/gikapassuti."""
+        )
 
     @commands.command(name='lari')
     async def cmd_lari(self, ctx):
-        await ctx.send(f'''{ctx.author.name} - Larissa Vitoriano (ela/dela) é Fundadora do projeto Mais Meninas na Tecnologia e Community Manager Tech em StackSpot. Você pode encontrá-la nas redes sociais como @laricavitoriano. | Conheça mais sobre o projeto: https://maismeninasnatecnologia.com/.''')
+        await ctx.send(
+            f"""{ctx.author.name} - Larissa Vitoriano (ela/dela) é Fundadora 
+            do projeto Mais Meninas na Tecnologia e Community Manager Tech em 
+            StackSpot. Você pode encontrá-la nas redes sociais como 
+            @laricavitoriano. | Conheça mais sobre o projeto: 
+            https://maismeninasnatecnologia.com/."""
+        )
 
     ## Events
 
     """     
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
-        await ctx.send(f'''{ctx.author.name} - No dia 04/03 teremos o Feminisocial em parceria com o projeto "Mais Meninas na Tecnologia" às 19h00, horário de Brasília. Teremos a @gikapassuti como host, então já deixa o follow no canal: https://twitch.tv/gikapassuti.''')
-        await ctx.send('''Ainda nesse mês no dia 11/03 teremos nosso próximo Feministalk presencial e será no RJ. Mais informações aqui: https://www.sympla.com.br/evento/feministalk-presencial-rio-de-janeiro/1864354.''')
+        await ctx.send(
+            f'''{ctx.author.name} - No dia 04/03 teremos o Feminisocial em 
+            parceria com o projeto "Mais Meninas na Tecnologia" às 19h00, 
+            horário de Brasília. Teremos a @gikapassuti como host, então já 
+            deixa o follow no canal: https://twitch.tv/gikapassuti.'''
+        )
+        await ctx.send(
+            '''Ainda nesse mês no dia 11/03 teremos nosso próximo 
+            Feministalk presencial e será no RJ. Mais informações aqui: 
+            https://www.sympla.com.br/evento/feministalk-presencial-rio-de-janeiro/1864354
+            .'''
+        )
     """
 
     """ 
     @commands.command(name='maratona')
     async def cmd_maratona(self, ctx):
-        await ctx.send(f'''{ctx.author.name} - A Maratona Feministech é um evento marcante da comunidade que acontece anualmente para compartilharmos conhecimento de diversas streamers.''')
-        await ctx.send('''No ano de 2022, realizamos um evento para construir um sistema simples que tenha como produto final um site de cadastro de comunidades de tecnologia, com o objetivo de mostrar como funciona o desenvolvimento de um site de ponta a ponta (banco de dados, frontend, backend e deploy em produção), além de divulgar diversas iniciativas de tecnologia.''')
+        await ctx.send(
+            f'''{ctx.author.name} - A Maratona Feministech é um evento 
+            marcante da comunidade que acontece anualmente para 
+            compartilharmos conhecimento de diversas streamers.'''
+        )
+        await ctx.send(
+            '''No ano de 2022, realizamos um evento para construir um sistema 
+            simples que tenha como produto final um site de cadastro de 
+            comunidades de tecnologia, com o objetivo de mostrar como 
+            funciona o desenvolvimento de um site de ponta a ponta (banco de 
+            dados, frontend, backend e deploy em produção), além de divulgar 
+            diversas iniciativas de tecnologia.'''
+        )
     """
-    
