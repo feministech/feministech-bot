@@ -25,9 +25,9 @@ class Bot(commands.Bot):
     def __init__(self):
         super().__init__(irc_token=TOKEN, nick=USERNAME, prefix='!', initial_channels=CHANNELS)
 
-        self.divulgation = Divulgation('divulgation.ini')
-        self.hello = TimeOut('hello.tmp')
-        self.recomenda = RandomList('recomenda.txt')
+        self.divulgation = Divulgation('divulgações.ini')
+        self.boas_vindas = TimeOut('boas_vindas.tmp')
+        self.recomenda = RandomList('recomendações.txt')
 
     # Events
 
@@ -37,7 +37,7 @@ class Bot(commands.Bot):
         print('💜 | Conectado a Twitch com sucesso!')
 
     async def event_message(self, message):
-        await self.handle_hello(message)
+        await self.handle_boas_vindas(message)
         await self.handle_commands(message)
 
     async def event_command_error(self, ctx, error):
@@ -45,12 +45,10 @@ class Bot(commands.Bot):
 
     # Handles
 
-    async def handle_hello(self, message):
+    async def handle_boas_vindas(self, message):
         name = message.author.name
-        if message.content and name not in BOTS and self.hello.add(name):
+        if message.content and name not in BOTS and self.boas_vindas.add(name):
             await message.channel.send(self.divulgation.get_message(name, f'{name} Boas vindas <3'))
-
-    # Actions
 
     # Commands
 
@@ -182,5 +180,5 @@ class Bot(commands.Bot):
         await ctx.send('💜💜💜💜💜')
 
     @commands.command(name='sobe')
-    async def cmd_rbw(self, ctx):
+    async def cmd_sobe(self, ctx):
         await ctx.send('!rainbow')
