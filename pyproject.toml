@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "feministech_bot"
 version = "1.0.0"
-description = "Este é nosso bot disponível em todos os chats dos canais de pessoas criadoras da comunidade Feministech."
+description = "Este é o nosso bot disponível em todos os chats dos canais de pessoas streamers da comunidade Feministech."
 authors = ["bug_elseif <https://github.com/bugelseif>"]
 license = "MIT"
 readme = "README.md"

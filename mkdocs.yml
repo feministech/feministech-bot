@@ -1,4 +1,7 @@
 site_name: Feministech Bot
+site_description: Este é o nosso bot disponível em todos os chats dos canais de pessoas streamers da comunidade Feministech.
+site_url: https://feministech.github.io/feministech-bot/
+
 repo_url: https://github.com/feministech/feministech-bot
 repo_name: feministech/feministech-bot
 edit_uri: tree/main/docs

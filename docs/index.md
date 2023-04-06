@@ -1,6 +1,6 @@
 # Feministech Bot ✨
 
-> ❓ Este é nosso bot disponível em todos os chats dos canais de pessoas criadoras da comunidade Feministech, foi feito em Python, utilizando o gerenciador de ambientes Poetry, a biblioteca TwitchIO, as ferramentas de qualidade de código blue e isort, com automações utilizando taskipy, e totalmente documentado com Mkdocs.
+> ❓ Este é nosso bot disponível em todos os chats dos canais de pessoas streamers da comunidade Feministech, foi feito em Python, utilizando o gerenciador de ambientes Poetry, a biblioteca TwitchIO, as ferramentas de qualidade de código blue e isort, com automações utilizando taskipy, e totalmente documentado com Mkdocs.
 
 ---
 
