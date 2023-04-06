@@ -21,6 +21,3 @@ __pycache__/
 # Artefatos
 *.egg-info
 /dist/
-
-# Poetry
-poetry.lock
