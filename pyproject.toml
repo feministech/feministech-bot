@@ -3,6 +3,9 @@ name = "botlive"
 version = "1.0.0"
 description = "Este é nosso bot disponível em todos os chats dos canais de pessoas criadoras da comunidade Feministech."
 authors = ["bug_elseif <https://github.com/bugelseif>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "botlive"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
