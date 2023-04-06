@@ -1,4 +1,4 @@
-# Preparação do ambiente Python com Poetry 🐍
+# Preparação do ambiente 🐍
 
 ## Instalação do Python
 

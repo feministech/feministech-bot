@@ -1,0 +1,20 @@
+site_name: Feministech Bot
+repo_url: https://github.com/feministech/feministech-bot
+repo_name: feministech/feministech-bot
+edit_uri: tree/main/docs
+
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - termynal
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [botlive]
