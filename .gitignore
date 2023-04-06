@@ -6,9 +6,9 @@
 /config.ini
 
 # Dados
-/animals.txt
-/divulgation.ini
-/musics.txt
+/animais.txt
+/divulgações.ini
+/musicas.txt
 /*.tmp
 /*.bak
 /*.dat
@@ -21,6 +21,3 @@ __pycache__/
 # Artefatos
 *.egg-info
 /dist/
-
-# Poetry
-poetry.lock

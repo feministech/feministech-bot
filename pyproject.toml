@@ -1,19 +1,38 @@
 [tool.poetry]
-name = "botlive"
+name = "feministech_bot"
 version = "1.0.0"
-description = "Este é nosso bot disponível em todos os chats dos canais de pessoas criadoras da comunidade Feministech."
+description = "Este é o nosso bot disponível em todos os chats dos canais de pessoas streamers da comunidade Feministech."
 authors = ["bug_elseif <https://github.com/bugelseif>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "feministech_bot"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-twitchio = "~1.2.3"
+python = "^3.11"
+twitchio = "^2.6.0"
 
 [tool.poetry.dev-dependencies]
-flake8 = "^3.9"
+blue = "^0.9.1"
+isort = "^5.12.0"
+taskipy = "^1.10.4"
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.1.5"
+mkdocstrings = "^0.20.0"
+mkdocstrings-python = "^0.9.0"
+termynal = "^0.2.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-botlive = "botlive.bot:run"
+bot = "feministech_bot.bot:run"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "blue . && isort ."
+docs = "mkdocs serve"

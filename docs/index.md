@@ -2,54 +2,64 @@
 
 > ❓ Este é nosso bot disponível em todos os chats dos canais de pessoas streamers da comunidade Feministech, foi feito em Python, utilizando o gerenciador de ambientes Poetry, a biblioteca TwitchIO, as ferramentas de qualidade de código blue e isort, com automações utilizando taskipy, e totalmente documentado com Mkdocs.
 
+---
+
 ## 📋 Requisitos
 
-### 🤖 Produção:
+### 🤖 Produção
 
 - [Python (^3.11)](https://www.python.org/)
 - [TwitchIO (^2.6.0)](https://twitchio.dev/)
 
-### 🧰 Desenvolvimento:
+### 🧰 Desenvolvimento
 
 - [Poetry (^1.4.2)](https://python-poetry.org/)
 - [Blue (^0.9.1)](https://blue.readthedocs.io/en/latest/)
 - [iSort (^5.12.0)](https://pycqa.github.io/isort/)
 - [TaskiPy (^1.10.4)](https://github.com/taskipy/taskipy)
 
-### 📚 Documentação:
+### 📚 Documentação
 
 - [Mkdocs-material (^9.1.5)](https://squidfunk.github.io/mkdocs-material/)
 - [Mkdcostrings (^0.20.0)](https://mkdocstrings.github.io/)
 - [Mkdocstrings-python (^0.9.0)](https://mkdocstrings.github.io/python/)
 - [Termynal (^0.2.1)](https://daxartio.github.io/termynal/)
 
+---
+
 ## 🔎 Como utilizar
 
 Para utilizar ou trabalhar tanto no bot, quanto na documentação é necessário rodar o comando abaixo no seu terminal, dentro da pasta do projeto na sua máquina:
 
+<!-- termynal -->
+
 ```console
 $ poetry install
+---> 100%
 ```
 
-### 🤖 Bot:
+### 🤖 Bot
 
 Para utilizar o bot, basta seguir os próximos passos:
 
 - Configure o arquivo `config.ini`.
 
-> 📚 Para mais informações sobre esse arquivo, acesse a nossa documentação [clicando aqui](https://feministech.github.io/feministech-bot/configuracao.md).
+> 📚 Para mais informações sobre esse arquivo, acesse a nossa documentação [clicando aqui](/configuracao.md).
 
 - Execute o bot:
 
+<!-- termynal -->
+
 ```console
-poetry run bot
+$ poetry run bot
+💜 | Conectado a Twitch com sucesso!
 ```
 
 _⚠️ É necessário desligar o bot com as teclas de atalho CTRL + C e rodá-lo novamente com o comando acima, a cada alteração feita em seu código._
 
-> 📚 Para mais informações de como configurar o seu ambiente Python com Poetry, acesse a nossa documentação [clicando aqui](https://feministech.github.io/feministech-bot/ambiente).
+> 📚 Para mais informações de como configurar o seu ambiente Python com Poetry, acesse a nossa documentação [clicando aqui](/ambiente).
 
-### 📚 Documentação:
+### 📚 Documentação
 
 Para trabalhar na documentação, basta editar os arquivos markdown (`.md`) dentro da pasta `docs`.
 
@@ -57,15 +67,26 @@ Caso precise adicionar imagens ou outros conteúdos de mídia na documentação,
 
 Ou para alterações e melhorias no estilo, basta editar o arquivo `extra.css`, dentro da pasta `docs/stylesheets`.
 
-Para visualizar as alterações feitas na documentação na sua máquina, basta rodar o comando e acessar pelo endereço informado na última linha:
+Para visualizar as alterações feitas na documentação na sua máquina, basta rodar o comando e acessar pelo endereço informado na última linha (nesse exemplo, seria o `http://127.0.0.1:8000/`):
+
+<!-- termynal -->
 
 ```console
-poetry run task docs
+$ poetry run task docs
+INFO     -  Building documentation...
+INFO     -  Cleaning site directory
+INFO     -  Documentation built in 0.14 seconds
+INFO     -  [10:02:13] Watching paths for changes: 'docs', 'mkdocs.yml'
+INFO     -  [10:02:13] Serving on http://127.0.0.1:8000/
 ```
+
+---
 
 ## 📋 Issues
 
 Fique à vontade para abrir uma issue caso encontre algum bug ou tenha alguma sugestão, assim podemos discutir o melhor caminho para melhorá-la ou corrigi-lá.
+
+---
 
 ## 👋 Contribuição
 
@@ -73,19 +94,26 @@ Você será sempre bem-vinde a contribuir com este projeto, pedimos apenas que p
 
 Ao finalizar o trabalho, não deixe de rodar as nossas ferramentas de qualidade de código, com o comando abaixo:
 
+<!-- termynal -->
+
 ```console
-poetry run task lint
+$ poetry run task lint
+---> 100%
 ```
 
 Finalizados os trabalhos, basta criar sua pull request e aguardar a revisão.
 
 > 💡 Aproveite e confira nas nossas issues, se existe alguma prioridade ou sugestão de contribuição.
 
+---
+
 ## 📎 Links
 
 - [Site oficial da Feministech](https://feministech.com.br/)
 - [Site do Time Feministech na Twitch](https://www.twitch.tv/team/livecodergirls)
 - [Documentação Oficial do Bot](https://feministech.github.io/feministech-bot/)
+
+---
 
 ## 📜 Licença
 
