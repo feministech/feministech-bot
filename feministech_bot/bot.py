@@ -40,7 +40,7 @@ class Bot(commands.Bot):
         await self.handle_boas_vindas(message)
         await self.handle_commands(message)
 
-    async def event_command_error(self, ctx, error):
+    async def event_command_error(self, error):
         print(error)
 
     # Handles
