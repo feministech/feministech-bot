@@ -5,8 +5,8 @@ description = "Este é nosso bot disponível em todos os chats dos canais de pes
 authors = ["bug_elseif <https://github.com/bugelseif>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-twitchio = "~1.2.3"
+python = "^3.10"
+twitchio = "^2.6.0"
 
 [tool.poetry.dev-dependencies]
 blue = "^0.9.1"
