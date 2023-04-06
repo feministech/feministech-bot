@@ -1,16 +1,20 @@
 # Preparação do ambiente 🐍
 
+---
+
 ## Instalação do Python
 
 ### 🪟 Windows
 
 TODO
 
-### 🐧Linux
+### 🐧 Linux
 
 TODO
 
 ### 🍎 macOS
+
+---
 
 ## Instalação do Poetry
 
@@ -34,7 +38,7 @@ Para verificar se está tudo funcionando corretamente, basta rodar o seguinte co
 poetry --version
 ```
 
-### 🐧Linux
+### 🐧 Linux
 
 TODO
 

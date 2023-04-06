@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "botlive"
+name = "feministech_bot"
 version = "1.0.0"
 description = "Este é nosso bot disponível em todos os chats dos canais de pessoas criadoras da comunidade Feministech."
 authors = ["bug_elseif <https://github.com/bugelseif>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "botlive"}]
+packages = [{include = "feministech_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -27,7 +27,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-botlive = "botlive.bot:run"
+bot = "feministech_bot.bot:run"
 
 [tool.isort]
 profile = "black"
