@@ -25,7 +25,7 @@ def is_mod(f):
 class Bot(commands.Bot):
     def __init__(self):
         super().__init__(
-            irc_token=TOKEN,
+            token=TOKEN,
             nick=USERNAME,
             prefix='!',
             initial_channels=CHANNELS,
@@ -152,12 +152,12 @@ class Bot(commands.Bot):
     @commands.command(name='evento')
     async def cmd_evento(self, ctx):
         await ctx.send(
-            f'''{ctx.author.name} - Nos dias 24, 25 e 26 de maio 
+            f"""{ctx.author.name} - Nos dias 24, 25 e 26 de maio 
             acontecerá a GALACTECH! Uma conferência online para explorar 
             Comunidades, Conteúdo e Developer Relations. 
             Começa às 19h00, horário de Brasília. 
             Teremos a @gikapassuti e @morgannadev como hosts, então já 
-            deixa o follow no canal: https://twitch.tv/feministech.'''
+            deixa o follow no canal: https://twitch.tv/feministech."""
         )
 
     @commands.command(name='gisele')
@@ -170,17 +170,16 @@ class Bot(commands.Bot):
         )
 
     @commands.command(name='andreza')
-    async def cmd_lari(self, ctx):
+    async def cmd_andreza(self, ctx):
         await ctx.send(
             f"""{ctx.author.name} - Andreza Rocha (ela/dela) é CEO e 
             fundadora do AfrOya Tech. 
             | Conheça e acompanhe a Andreza: 
             https://www.linkedin.com/in/andrezarocha/ """
         )
-    
 
     @commands.command(name='morganna')
-    async def cmd_lari(self, ctx):
+    async def cmd_morganna(self, ctx):
         await ctx.send(
             f"""{ctx.author.name} - Morganna (ela/dela) é DevRel na 
             BotCity, criadora de conteúdo e evangelizadora Ada Lovelace. 
@@ -189,7 +188,7 @@ class Bot(commands.Bot):
         )
 
     @commands.command(name='pachi')
-    async def cmd_lari(self, ctx):
+    async def cmd_pachi(self, ctx):
         await ctx.send(
             f"""{ctx.author.name} - Pachi Parra (ela/dela) é Developer Advocate 
             no GitHub, Coach de dev de palco e patrimônio histórico da Feministech
@@ -208,7 +207,7 @@ class Bot(commands.Bot):
         )
 
     @commands.command(name='levxyca')
-    async def cmd_lari(self, ctx):
+    async def cmd_levxyca(self, ctx):
         await ctx.send(
             f"""{ctx.author.name} - Leticia 'levxyca' (ela/dela) é 
             desenvolvedora de software, criadora de conteúdo e 
@@ -218,9 +217,8 @@ class Bot(commands.Bot):
             https://www.linkedin.com/in/leticiacaroline/ """
         )
 
-
     @commands.command(name='lunna')
-    async def cmd_lari(self, ctx):
+    async def cmd_lunna(self, ctx):
         await ctx.send(
             f"""{ctx.author.name} - Lunna Fabris (ela/dela) é 
             Designer e Youtuber. 
@@ -229,7 +227,7 @@ class Bot(commands.Bot):
         )
 
     @commands.command(name='natalia')
-    async def cmd_lari(self, ctx):
+    async def cmd_natalia(self, ctx):
         await ctx.send(
             f"""{ctx.author.name} - Natália F. Dev (ela/dela) é 
             Desenvolvedora front-end e Devrel. 
@@ -238,7 +236,7 @@ class Bot(commands.Bot):
         )
 
     @commands.command(name='jeniffer')
-    async def cmd_lari(self, ctx):
+    async def cmd_jeniffer(self, ctx):
         await ctx.send(
             f"""{ctx.author.name} - Jeniffer Bittencourt (ela/dela) é 
             Criadora de bugs em Kotlin. 
@@ -248,7 +246,7 @@ class Bot(commands.Bot):
         )
 
     @commands.command(name='nadi')
-    async def cmd_lari(self, ctx):
+    async def cmd_nadi(self, ctx):
         await ctx.send(
             f"""{ctx.author.name} - Nadi Duno (ela/dela), 
             de pintora de paredes a artista de dados. 
@@ -257,7 +255,7 @@ class Bot(commands.Bot):
         )
 
     @commands.command(name='malu')
-    async def cmd_lari(self, ctx):
+    async def cmd_malu(self, ctx):
         await ctx.send(
             f"""{ctx.author.name} - Malu Sabino (ela/dela) é 
             Community Manager e Porta voz do Roadsec.  
