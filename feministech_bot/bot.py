@@ -149,13 +149,52 @@ class Bot(commands.Bot):
 
     ## Misc.
 
-    @commands.command(name='gika')
+    @commands.command(name='evento')
+    async def cmd_evento(self, ctx):
+        await ctx.send(
+            f'''{ctx.author.name} - Nos dias 24, 25 e 26 de maio 
+            acontecerá a GALACTECH! Uma conferência online para explorar 
+            Comunidades, Conteúdo e Developer Relations. 
+            Começa às 19h00, horário de Brasília. 
+            Teremos a @gikapassuti e @morgannadev como hosts, então já 
+            deixa o follow no canal: https://twitch.tv/feministech.'''
+        )
+
+    @commands.command(name='gisele')
     async def cmd_gika(self, ctx):
         await ctx.send(
-            f"""{ctx.author.name} - A Gisele Passuti (ela/dela) é DevRel na 
+            f"""{ctx.author.name} - A Gisele (ela/dela) é DevRel na 
             db1group, coordenadora na @feministech, e tem um coraçãozinho na 
             qualidade de software. | Conheça e acompanhe a Gika: 
-            https://twitter.com/gikapassuti."""
+            https://twitter.com/gikapassuti | www.instagram.com/gikapassuti/"""
+        )
+
+    @commands.command(name='andreza')
+    async def cmd_lari(self, ctx):
+        await ctx.send(
+            f"""{ctx.author.name} - Andreza Rocha (ela/dela) é CEO e 
+            fundadora do AfrOya Tech. 
+            | Conheça e acompanhe a Andreza: 
+            https://www.linkedin.com/in/andrezarocha/ """
+        )
+    
+
+    @commands.command(name='morganna')
+    async def cmd_lari(self, ctx):
+        await ctx.send(
+            f"""{ctx.author.name} - Morganna (ela/dela) é DevRel na 
+            BotCity, criadora de conteúdo e evangelizadora Ada Lovelace. 
+            | Conheça e acompanhe a Morgs: 
+            https://www.linkedin.com/in/morgannadev/ """
+        )
+
+    @commands.command(name='pachi')
+    async def cmd_lari(self, ctx):
+        await ctx.send(
+            f"""{ctx.author.name} - Pachi Parra (ela/dela) é Developer Advocate 
+            no GitHub, Coach de dev de palco e patrimônio histórico da Feministech
+            | Conheça e acompanhe a Pachi: 
+            https://github.com/pachicodes | https://twitter.com/pachicodes """
         )
 
     @commands.command(name='lari')
@@ -164,8 +203,66 @@ class Bot(commands.Bot):
             f"""{ctx.author.name} - Larissa Vitoriano (ela/dela) é Fundadora 
             do projeto Mais Meninas na Tecnologia e Community Manager Tech em 
             StackSpot. Você pode encontrá-la nas redes sociais como 
-            @laricavitoriano. | Conheça mais sobre o projeto: 
-            https://maismeninasnatecnologia.com/."""
+            @laricavitoriano. | Conheça e acompanhe a Larissa: 
+            https://instagram.com/laricavitoriano """
+        )
+
+    @commands.command(name='levxyca')
+    async def cmd_lari(self, ctx):
+        await ctx.send(
+            f"""{ctx.author.name} - Leticia 'levxyca' (ela/dela) é 
+            desenvolvedora de software, criadora de conteúdo e 
+            cofundadora da Feministech. 
+            | Conheça e acompanhe a levxyca: 
+            https://github.com/levxyca | 
+            https://www.linkedin.com/in/leticiacaroline/ """
+        )
+
+
+    @commands.command(name='lunna')
+    async def cmd_lari(self, ctx):
+        await ctx.send(
+            f"""{ctx.author.name} - Lunna Fabris (ela/dela) é 
+            Designer e Youtuber. 
+            | Conheça e acompanhe a levxyca: 
+            https://twitter.com/Lunna_Fabris """
+        )
+
+    @commands.command(name='natalia')
+    async def cmd_lari(self, ctx):
+        await ctx.send(
+            f"""{ctx.author.name} - Natália F. Dev (ela/dela) é 
+            Desenvolvedora front-end e Devrel. 
+            | Conheça e acompanhe a Natália: 
+            https://www.instagram.com/nataliafdev/ """
+        )
+
+    @commands.command(name='jeniffer')
+    async def cmd_lari(self, ctx):
+        await ctx.send(
+            f"""{ctx.author.name} - Jeniffer Bittencourt (ela/dela) é 
+            Criadora de bugs em Kotlin. 
+            | Conheça e acompanhe a Jeniffer: 
+            https://www.linkedin.com/in/jeniffer-bittencourt |
+            https://instagram.com/jeniblo_dev """
+        )
+
+    @commands.command(name='nadi')
+    async def cmd_lari(self, ctx):
+        await ctx.send(
+            f"""{ctx.author.name} - Nadi Duno (ela/dela), 
+            de pintora de paredes a artista de dados. 
+            | Conheça e acompanhe a Nadi: 
+            https://www.linkedin.com/in/nadiduno/ """
+        )
+
+    @commands.command(name='malu')
+    async def cmd_lari(self, ctx):
+        await ctx.send(
+            f"""{ctx.author.name} - Malu Sabino (ela/dela) é 
+            Community Manager e Porta voz do Roadsec.  
+            | Conheça e acompanhe a Nadi: 
+            https://www.linkedin.com/in/nadiduno/ """
         )
 
     ## Events
